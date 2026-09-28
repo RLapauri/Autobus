@@ -4,6 +4,21 @@ public class Autobus
     private int sitzplatz;
     private boolean anhanger;   
     
+    public Autobus ()
+    {
+        setKennzeichen("W-1234A");
+        setSitzplatz(29);
+        setAnhanger(false);
+    }
+    
+    public Autobus(String neuKennzeichen, int neuSitzplatz, boolean neuAnhanger)
+    {
+        setKennzeichen (neuKennzeichen);
+        setSitzplatz(neuSitzplatz);
+        setAnhanger(neuAnhanger);
+    }
+    
+    
     public String getKennzeichen()
     {
         return kennzeichen;
